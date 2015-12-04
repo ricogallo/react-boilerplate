@@ -1,0 +1,24 @@
+{
+  "name": "react-starterify",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "mfirry"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mfirry/react-starterify",
+  "moduleType": [
+    "es6"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
