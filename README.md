@@ -1,4 +1,4 @@
-# React Starterify
+# React Boilerplate
 
 A minimal and solid React JS application skeleton.
 
@@ -20,8 +20,6 @@ Suggestions are welcome!!
 ## Usage
 
 __Clone this repository:__
-
-`git clone https://github.com/mfirry/react-starterify.git`
 
 __Install the dependencies:__
 
