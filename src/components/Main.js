@@ -46,17 +46,3 @@ export default React.createClass({
     );
   },
 });
-
-
-// return (
-//   <div>
-//     <header>
-//       <h1><Link to="/">React Starterify {version}</Link></h1>
-//       <Link to="/about">About</Link>
-//       <Link to="/poweredby">Powered by</Link>
-//     </header>
-//     <section>
-//       {this.props.children || 'Welcome to React Starterify'}
-//     </section>
-//   </div>
-// );
