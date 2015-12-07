@@ -1,12 +1,13 @@
 {
-  "name": "react-starterify",
+  "name": "react-boilerplate",
   "description": "",
   "main": "app.js",
   "authors": [
-    "mfirry"
+    "mfirry",
+    "fabiofumarola"
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/mfirry/react-starterify",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/unicredit/react-boilerplate",
   "moduleType": [
     "es6"
   ],
