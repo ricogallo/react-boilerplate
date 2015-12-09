@@ -43,7 +43,7 @@ __Styles__
 - [PostCSS + plugins](https://github.com/postcss/postcss)
 
 __JSX/ES6 transpilation__
-- [Babel (formerly 6to5)](https://github.com/babel/babel)
+- [Babel](https://github.com/babel/babel)
 
 __JS Minification__
 - [Minifyify](https://github.com/ben-ng/minifyify)
