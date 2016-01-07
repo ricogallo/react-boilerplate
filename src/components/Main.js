@@ -16,7 +16,7 @@ export default React.createClass({
             <Navbar inverse>
               <Navbar.Header>
                 <Navbar.Brand>
-                  <Link to="/">React Starterify {version}</Link>
+                  <Link to="/">React Boilerplate {version}</Link>
                 </Navbar.Brand>
                 <Navbar.Toggle />
               </Navbar.Header>
