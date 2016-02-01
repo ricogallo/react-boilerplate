@@ -39,7 +39,9 @@
   },
   "homepage": "https://github.com/unicredit/react-boilerplate",
   "dependencies": {
+    "fetchify": "0.0.2",
     "history": "^1.13.1",
+    "q": "^1.4.1",
     "react": "^0.14.3",
     "react-bootstrap": "^0.28.1",
     "react-dom": "^0.14.3",
@@ -76,7 +78,6 @@
   },
   "optionalDependencies": {
     "chai": "latest",
-    "fetchify": "0.0.2",
     "immutable": "latest",
     "mocha": "latest",
     "ramda": "latest",
