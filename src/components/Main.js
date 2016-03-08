@@ -5,7 +5,7 @@ import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
 
 export default React.createClass({
   propTypes: {
-    children: React.PropTypes.array,
+    children: React.PropTypes.object,
   },
   render() {
     const version = packageJSON.version;

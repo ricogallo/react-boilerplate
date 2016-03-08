@@ -32,7 +32,10 @@ export default React.createClass({
         <div>
           <h2>Powered by</h2>
           <ul>
-            {[...deps, ...devDeps]}
+            {[...deps]}
+          </ul>
+          <ul>
+            {[...devDeps]}
           </ul>
         </div>
       </div>
