@@ -1,0 +1,53 @@
+@import _colors
+@import _spinner
+
+body
+  color: $text
+
+nav
+  margin-bottom: 20px
+
+  .active
+    background-color: $background
+
+.related-news
+  padding: 20px
+  border: 2px solid $primary
+  font-variant: small-caps
+
+  li
+    list-style: none
+    padding-bottom: 10px
+
+.article
+  padding: 20px
+
+  &:nth-child(even)
+    background-color: $background
+
+  h3
+    font-size: 130%
+
+  .topics
+    margin:
+      top: 10px
+      left: 20px
+
+    .label
+      margin-right: 5px
+
+.clickable
+  cursor: pointer
+
+.icons
+  margin-top: 15px
+
+  i
+    color: $primary
+    margin-right: 10px
+
+.fulltext
+  margin: 20px 0
+
+  p
+    text-align: justify
