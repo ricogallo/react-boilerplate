@@ -35,7 +35,7 @@ __When you are done, create a production ready version of the JS bundle:__
 ## Tools used:
 
 __Styles__
-- [PostCSS + plugins](https://github.com/postcss/postcss)
+- [node-sass](https://github.com/sass/node-sass)
 
 __JSX/ES6 transpilation__
 - [Babel](https://github.com/babel/babel)
