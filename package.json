@@ -23,7 +23,7 @@
     "test": "mocha --reporter nyan --compilers js:babel-register --recursive",
     "clean": "rimraf dist/*",
     "browserify": "NODE_ENV=production browserify src/app.js -t babelify -d -p [minifyify --map app.js.map --output dist/app.js.map] > dist/app.js",
-    "styles": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/ && postcss -u postcss-mixins -u postcss-simple-extend -u postcss-nested -u postcss-simple-vars -u autoprefixer -d dist src/styles/*.css",
+    "styles": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/ && node-sass src/styles/ --output dist/ --source-map dist/  --output-style compressed",
     "server": "browser-sync start --files \"dist/main.css,dist/app.js\" --server ./ --reload-delay 1000",
     "build": "npm run create-dist && npm run clean && npm run copy-replace && parallelshell \"npm run styles\" \"npm run browserify\"",
     "watch": "npm run create-dist && npm run styles && npm run browserify && parallelshell \"npm run watchify\" \"npm run watch-css -s\" \"npm run watch-lint\" \"npm run server\"",
