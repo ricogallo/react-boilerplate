@@ -15,7 +15,6 @@
     "react",
     "browserify",
     "boilerplate",
-    "kickstarter",
     "ES6",
     "ES2015"
   ],
@@ -24,7 +23,7 @@
     "test": "mocha --reporter nyan --compilers js:babel-register --recursive",
     "clean": "rimraf dist/*",
     "browserify": "NODE_ENV=production browserify src/app.js -t babelify -d -p [minifyify --map app.js.map --output dist/app.js.map] > dist/app.js",
-    "styles": "postcss -u postcss-mixins -u postcss-simple-extend -u postcss-nested -u postcss-simple-vars -u autoprefixer -d dist src/styles/*.css",
+    "styles": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/ && postcss -u postcss-mixins -u postcss-simple-extend -u postcss-nested -u postcss-simple-vars -u autoprefixer -d dist src/styles/*.css",
     "server": "browser-sync start --files \"dist/main.css,dist/app.js\" --server ./ --reload-delay 1000",
     "build": "npm run create-dist && npm run clean && npm run copy-replace && parallelshell \"npm run styles\" \"npm run browserify\"",
     "watch": "npm run create-dist && npm run styles && npm run browserify && parallelshell \"npm run watchify\" \"npm run watch-css -s\" \"npm run watch-lint\" \"npm run server\"",
@@ -39,6 +38,7 @@
   },
   "homepage": "https://github.com/unicredit/react-boilerplate",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "fetchify": "0.0.2",
     "q": "^1.4.1",
     "react": "^0.14.3",
@@ -80,8 +80,6 @@
     "whatwg-fetch": "^0.11.0"
   },
   "optionalDependencies": {
-    "immutable": "latest",
-    "ramda": "latest",
-    "whatwg-fetch": "^0.11.0"
+    "ramda": "latest"
   }
 }
