@@ -1,12 +1,11 @@
 import React from 'react';
 
-export default React.createClass({
-  render() {
-    return (
-      <div>
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    );
-  },
-});
+// now, here's an example of a so called "Functional Stateless Component"
+export default About = () => {
+  return (
+    <div>
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+  );
+}

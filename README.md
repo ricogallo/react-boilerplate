@@ -51,7 +51,5 @@ __Dev server/livereload__
 
 __Code linting__
 - [Eslint](http://eslint.org/)
-- [Airbnb javascript rules](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
-
 __Bootstrap__
 - [React-Bootstrap](https://react-bootstrap.github.io/)
