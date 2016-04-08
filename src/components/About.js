@@ -1,7 +1,7 @@
 import React from 'react';
 
 // now, here's an example of a so called "Functional Stateless Component"
-export default About = () => {
+export default () => {
   return (
     <div>
       <h2>About</h2>
