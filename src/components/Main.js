@@ -40,7 +40,7 @@ export default React.createClass({
             </Navbar>
           </header>
           <section>
-            {this.props.children || 'Welcome to React Starterify'}
+            {this.props.children || 'Welcome to React Boilerplate'}
           </section>
         </div>
     );
