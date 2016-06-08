@@ -6,13 +6,19 @@ import { Router, Route, hashHistory } from 'react-router';
 import Main from './components/Main';
 import PoweredBy from './components/Powered-by';
 import About from './components/About';
+import Environment from './components/Environment';
 
-render((
+const router = (
   <Router history={ hashHistory } >
     <Route path="/" component={Main}>
       <Route path="/about" component={About} />
       <Route path="/poweredby" component={PoweredBy} />
-      </Route>
-    </Router>
-  ), document.getElementById('content')
+      <Route path="/environment" component={Environment} />
+    </Route>
+  </Router>
+)
+
+render(
+  router
+  , document.getElementById('content')
 );

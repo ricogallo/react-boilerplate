@@ -35,21 +35,31 @@ __When you are done, create a production ready version of the JS bundle:__
 ## Tools used:
 
 __Styles__
-- [node-sass](https://github.com/sass/node-sass)
+- [node-sass](https://github.com/sass/node-sass): it enables SASS for your styles
 
 __JSX/ES6 transpilation__
 - [Babel](https://github.com/babel/babel)
 
 __JS Minification__
-- [Minifyify](https://github.com/ben-ng/minifyify)
+- [Minifyify](https://github.com/ben-ng/minifyify): it compress your files while storing a `.map` which references your source code.
 
 __Modules__
-- [Browserify](http://browserify.org/)
+- [Browserify](http://browserify.org/):
 
 __Dev server/livereload__
-- [Browser Sync](http://www.browsersync.io/)
+- [Browser Sync](http://www.browsersync.io/):
 
 __Code linting__
-- [Eslint](http://eslint.org/)
+- [Eslint](http://eslint.org/):
+
 __Bootstrap__
 - [React-Bootstrap](https://react-bootstrap.github.io/)
+
+__CSS__
+- [css-modulesify](https://github.com/css-modules/css-modulesify): [css-modules](http://glenmaddern.com/articles/css-modules) allows you to define and import custom and safe css class for your components.
+
+__AUTOPREFIXER__
+- [autoprefixer](https://github.com/postcss/autoprefixer): it parses CSS and adds vendor prefixes to rules
+
+__ENV_LOADER__
+- [localenvify](https://github.com/vvo/localenvify): loads configurations from env files
