@@ -14,7 +14,10 @@ Suggestions are welcome!!
 
 ## Setup
 
-To start clone the latest tag `git clone --branch 1.4.0 git@github.com:unicredit/react-boilerplate.git <your project name>`.
+To start
+
+1. clone the latest tag `git clone --branch 1.4.1 git@github.com:unicredit/react-boilerplate.git <your project name>`
+2. execute the command `cp .env.example .env`
 
 ## Usage
 
