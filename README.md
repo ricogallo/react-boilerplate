@@ -12,6 +12,10 @@ Currently we have not included any automatic tool to integrate css into the inde
 **Please, add the required css such as bootstrap or other css to the src/styles folder**.
 Suggestions are welcome!!
 
+## Setup
+
+To start clone the latest tag `git clone --branch 1.4.0 git@github.com:unicredit/react-boilerplate.git <your project name>`.
+
 ## Usage
 
 __Clone this repository:__
