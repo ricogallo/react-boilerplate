@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "React JS application skeleton",
   "license": "Apache-2.0",
   "repository": {
@@ -23,11 +23,11 @@
     "test": "mocha --reporter nyan --compilers js:babel-register --recursive",
     "clean": "rimraf dist/*",
     "copy-replace": "cp index.html dist/ && replace \"dist/\" \"\" dist/index.html",
-    "browserify": "NODE_ENV=development browserify -t babelify -t localenvify -p [css-modulesify -after autoprefixer --autoprefixer.browsers '> 5%' -o dist/main.css --json dist/css-modules.json] -d -p [minifyify --map app.js.map --output dist/app.js.map] -o dist/app.js src/app.js",
-    "watchify": "watchify -v -t babelify -t localenvify -p [css-modulesify -after autoprefixer --autoprefixer.browsers '> 5%' -o dist/main.css --json dist/css-modules.json] src/app.js -o dist/app.js",
+    "browserify": "NODE_ENV=development browserify -t babelify -t localenvify -p [css-modulesify -after autoprefixer --autoprefixer.browsers '> 5%' -o dist/main.css --json dist/css-modules.json] -d -p [minifyify --map main.js.map --output dist/main.js.map] -o dist/main.js src/main.js",
+    "watchify": "watchify -v -t babelify -t localenvify -p [css-modulesify -after autoprefixer --autoprefixer.browsers '> 5%' -o dist/main.css --json dist/css-modules.json] src/main.js -o dist/main.js",
     "watch": "npm run create-dist && npm run copy-replace && npm run styles && npm run browserify && parallelshell \"npm run watchify\" \"npm run watch-css -s\" \"npm run watch-lint\" \"npm run server\"",
     "styles": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/ && cp -r node_modules/bootstrap/fonts dist/ && node-sass src/styles/ --output dist/ --source-map dist/  --output-style compressed",
-    "server": "browser-sync start --files \"dist/main.css,dist/app.js\" --server ./dist --reload-delay 1000",
+    "server": "browser-sync start --files \"dist/main.css,dist/main.js\" --server ./dist --reload-delay 1000",
     "build": "npm run create-dist && npm run clean && npm run copy-replace && parallelshell \"npm run styles\" \"npm run browserify\"",
     "watch-css": "chokidar \"src/styles/\" -c \"npm run styles\" ",
     "watch-lint": "esw -w --ext .js src/",
@@ -40,6 +40,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "fetchify": "0.0.2",
+    "font-awesome": "^4.6.3",
     "q": "^1.4.1",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.4",
